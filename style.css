@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
   
+  @viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+  
   header {
      
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -26,11 +31,12 @@
 
 nav ul {
     list-style-type: none;
+    margin-top: 50px
 }  
 
 nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 20px;
     flex-direction: column;
     text-align: end;
     
@@ -90,7 +96,7 @@ a {
   }
   
 
-  /* flex parent */
+  
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -98,7 +104,7 @@ a {
     width: 100%;
   }
   
-  /* flex child */
+ 
   .flex-item1 {
     width: 100%;
     border: 2px solid #242323;
