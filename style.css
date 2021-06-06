@@ -3,7 +3,7 @@
   }
   
   header {
-      padding: 6px;
+     
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       background-color: #263138;
       color: #ffffff;
@@ -16,7 +16,7 @@
   }
 
    nav {
-    padding-top: 15px;
+
     margin-right: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -31,7 +31,9 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-left: 25px;
+    flex-direction: column;
     text-align: end;
+    
 }
 
 a {
@@ -39,11 +41,23 @@ a {
     text-decoration: none;
 }
 
+.wrapper1
+.wrapper2
+ {
+    padding-right: 20px;
+}
 
   .subhead {
       background-image: url('bricks.jpg');
-      padding: 75px
+      padding: 60px
       }
+
+    #sub {
+        font-size:x-small;
+        text-align: right;
+        color: white
+      }
+
  #bio {
         display: flex;
         flex-direction: column;
@@ -52,9 +66,11 @@ a {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px;
+        border: 3px solid #242323;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
   
-  /* get rid of browser's margins and set background color */
   body {
     margin: 0;
     padding: 0;
@@ -65,127 +81,71 @@ a {
     min-height: 100vh;
   }
   
-  /* <main> */
   main {
     width: 80%;
-    /* center on page using auto for left/right */
     margin: 0px auto;
-    /* add padding so html inside has space */
     padding: 0px;
     background-color: #cdd8df;
-    border: 4px solid #2a607c;
   }
   
-  /* target <h2> element inside of <main> */
-  main h2 {
-    color: #e0d8d9;
-    /* set padding to 0 top, 10 right and left, and 0 bottom */
-    padding: 0 10px 10px;
-    border-bottom: 3px solid #2a607c;
-  }
-  
+
   /* flex parent */
   .flex-container {
-    /* create flexbox */
     display: flex;
-    /* instruct it to break onto next line if it runs out of space */
     flex-wrap: wrap;
-    /* put all unused space between items */
     justify-content: space-between;
     width: 100%;
   }
   
   /* flex child */
   .flex-item1 {
-    /* make each one 45%, putting 10% between each element on the page */
     width: 100%;
-    border: 4px solid #e0d8d9;
+    border: 2px solid #242323;
     background-color: #cdd8df;
     font-size: 22px;
     font-weight: bold;
-  
-    /* put space between each one vertically */
+    text-align: right;
     margin-bottom: 15px;
-  
-    /* for files in local images folder, use url('../images/file-name.jpg') */
-    background-image: url('https://via.placeholder.com/1000/393b4f/fb3e55?text=Placeholder');
-  
-    /* tell background to fit box no matter what */
+    background-image: url('horimage.jpg');
     background-size: cover;
-  
-    /* crop it at the center */
     background-position: center;
-  
-    /* padding top and bottom 20px, 0 for left/right */
     padding: 20px 0;
-  
-    /* set minimum heigh value so there's room */
     min-height: 250px;
-  
-    /* rather than use position...use flexbox and create column instead of row */
     display: flex;
     flex-direction: column;
-    
   }
-  
-  /* for text area inside of flex item */
-  .flex-item span {
-    /* pushes element to bottom of flex item */
-    margin-top: auto;
-    width: 75%;
-    background-color: #cdd8df;
-    color: #2a607c;
-    padding: 10px 5px;
-    align-self: center;
-    text-align: center;
+
+  .flex-item1:hover {
+      background-image: url('horimage1.jpg');
+  }
+
+  .horiseon { 
+      padding-top: 250px;
   }
 
   .flex-item2 {
-    /* make each one 45%, putting 10% between each element on the page */
+    /* child, 2 per row */
     width: 48%;
-    border: 4px solid #e0d8d9;
+    border: 2px solid #242323;
     background-color: #cdd8df;
     font-size: 22px;
     font-weight: bold;
-  
-    /* put space between each one vertically */
+    text-align: right;
     margin-bottom: 15px;
-  
-    /* for files in local images folder, use url('../images/file-name.jpg') */
-    background-image: url('https://via.placeholder.com/1000/393b4f/fb3e55?text=Placeholder');
-  
-    /* tell background to fit box no matter what */
+    background-image: url('runimage.jpg');
     background-size: cover;
-  
-    /* crop it at the center */
     background-position: center;
-  
-    /* padding top and bottom 20px, 0 for left/right */
     padding: 20px 0;
-  
-    /* set minimum heigh value so there's room */
     min-height: 100px;
-  
-    /* rather than use position...use flexbox and create column instead of row */
     display: flex;
     flex-direction: column;
-    
   }
-  
-  /* for text area inside of flex item */
-  .flex-item span {
-    /* pushes element to bottom of flex item */
-    margin-top: auto;
-    width: 75%;
-    background-color: #cdd8df;
-    color: #2a607c;
-    padding: 10px 5px;
-    align-self: center;
-    text-align: center;
+
+  .flex-item2:hover {
+      background-image: url('runimage1.jpg');
   }
   
   aside {
-    
     clear: left;
     float: left;
     display: flex;
@@ -194,7 +154,7 @@ a {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #cdd8df;
-    border-right: #a8adba; 
+    border-right: #8c919c; 
     border-right-width: thick
 }
 
@@ -204,16 +164,13 @@ h3 {
     text-align: right
 }
 
-
-
 #main {
     display: flex;
     flex-direction: column;
 }
 
-  
   footer {
-      padding: 20px;
+      padding-left: 20px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       background-color: #263138;
       color: #ffffff;
