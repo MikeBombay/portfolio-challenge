@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  
+
   @viewport {
     width: device-width ;
     zoom: 1.0 ;
@@ -38,19 +38,21 @@ nav ul li {
     display: inline-block;
     margin-left: 20px;
     flex-direction: column;
-    text-align: end;
-    
+    text-align: end; 
 }
+
+@media screen and (max-width: 900px) {
+nav ul li {
+      display:flex;
+    }}
 
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.wrapper1
-.wrapper2
- {
-    padding-right: 20px;
+#wrapper2, #wrapper1 {
+    margin-right: 10px;
 }
 
   .subhead {
